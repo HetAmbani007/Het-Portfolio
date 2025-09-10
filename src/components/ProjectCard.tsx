@@ -1,6 +1,12 @@
 import { BsArrowUpRight } from "react-icons/bs";
 
-export default function ProjectCard({ title, tech, link }) {
+type ProjectCardType = {
+  title: string;
+  tech: string;
+  link: string;
+};
+
+export default function ProjectCard({ title, tech, link }: ProjectCardType) {
   // If `tech` is a string, convert to array
   const techArray =
     typeof tech === "string" ? tech.split(",").map((t) => t.trim()) : tech;

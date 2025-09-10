@@ -181,7 +181,7 @@ const GithubIcon = ({ className }: IconProps) => (
 const Portfolio = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [particles, setParticles] = useState([]);
+  const [particles, setParticles] = useState<any>([]);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -196,7 +196,7 @@ const Portfolio = () => {
     setParticles(generatedParticles);
     setIsLoaded(true);
 
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: any) => {
       setMousePosition({
         x: (e.clientX / window.innerWidth) * 100,
         y: (e.clientY / window.innerHeight) * 100,
