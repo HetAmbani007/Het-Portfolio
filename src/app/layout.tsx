@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className="bg-gray-50 text-gray-900 font-sans">
         <Navbar />
-        <main className="px-4">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

@@ -47,7 +47,7 @@ export default function Hero() {
       </div>
 
       {/* Hero content */}
-      <div className="relative z-10 text-center px-6 pt-20 md:pt-32">
+      <div className="relative z-10 text-center px-4 sm: lg:px-0 pt-20 md:pt-32 max-w-6xl mx-auto">
         {/* Title */}
         <motion.h1
           className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight"
@@ -117,13 +117,13 @@ export default function Hero() {
         >
           <Link
             href="/projects"
-            className="px-6 py-3 bg-blue-600 text-white rounded-xl font-medium hover:bg-blue-700 transition flex items-center gap-2"
+            className=" py-3 bg-blue-600 text-white rounded-xl font-medium hover:bg-blue-700 transition flex items-center gap-2"
           >
             View My Work <BsArrowRight />
           </Link>
           <Link
             href="/contact"
-            className="px-6 py-3 border border-gray-400 text-gray-200 rounded-xl font-medium hover:bg-gray-800 transition"
+            className=" py-3 border border-gray-400 text-gray-200 rounded-xl font-medium hover:bg-gray-800 transition"
           >
             Hire Me
           </Link>
@@ -132,7 +132,7 @@ export default function Hero() {
 
       {/* Tech Stack Section */}
       <motion.div
-        className="relative z-10 mt-32 w-full max-w-4xl px-6"
+        className="relative z-10 mt-32 w-full max-w-6xl mx-auto px-4 sm: lg:px-0"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1.1 }}
@@ -178,11 +178,7 @@ export default function Hero() {
               name: "Jira",
               color: "hover:text-blue-500",
             },
-            {
-              icon: SiDocker,
-              name: "Docker",
-              color: "hover:text-blue-400",
-            },
+            { icon: SiDocker, name: "Docker", color: "hover:text-blue-400" },
           ].map(({ icon: Icon, name, color }, index) => (
             <div
               key={index}
@@ -195,9 +191,9 @@ export default function Hero() {
         </div>
       </motion.div>
 
-      {/* Domains Section with Badges */}
+      {/* Domains Section */}
       <motion.div
-        className="relative z-10 mt-16 px-6 mb-20" // <-- added mb-20
+        className="relative z-10 mt-16 px-4 sm: lg:px-0 mb-20 max-w-6xl mx-auto"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1.3 }}
