@@ -47,7 +47,7 @@ export default function Hero() {
       </div>
 
       {/* Hero content */}
-      <div className="relative z-10 text-center px-4 sm: lg:px-0 pt-20 md:pt-32 max-w-6xl mx-auto">
+      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-0 pt-28 md:pt-40 max-w-6xl mx-auto">
         {/* Title */}
         <motion.h1
           className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight"
@@ -117,13 +117,13 @@ export default function Hero() {
         >
           <Link
             href="/projects"
-            className=" py-3 bg-blue-600 text-white rounded-xl font-medium hover:bg-blue-700 transition flex items-center gap-2"
+            className="px-5 py-3 bg-blue-600 text-white rounded-xl font-medium hover:bg-blue-700 transition flex items-center gap-2"
           >
             View My Work <BsArrowRight />
           </Link>
           <Link
             href="/contact"
-            className=" py-3 border border-gray-400 text-gray-200 rounded-xl font-medium hover:bg-gray-800 transition"
+            className="p-4 border border-gray-400 text-gray-200 rounded-xl font-medium hover:bg-gray-800 transition"
           >
             Hire Me
           </Link>

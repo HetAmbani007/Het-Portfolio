@@ -13,11 +13,6 @@ const playfair = Playfair_Display({
   variable: "--font-playfair",
 });
 
-export const metadata = {
-  title: "Your Name | Portfolio",
-  description: "Frontend Developer Portfolio",
-};
-
 export default function RootLayout({
   children,
 }: {
